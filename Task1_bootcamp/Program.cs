@@ -20,4 +20,10 @@ for (int i = 1; i <= userInput; i++)
     {
         Console.WriteLine(i);
     }
+    
+    if (x < n)
+    {
+         Console.Write(", ");
+    }
+    
 }
