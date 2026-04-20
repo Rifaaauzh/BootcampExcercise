@@ -32,7 +32,6 @@ public class Generator
         {
             string output = "";
 
-            // build string if the number match with rules
             foreach(var rule in rules)
             {
                 if (i % rule.Key == 0)
@@ -40,8 +39,7 @@ public class Generator
                     output+=rule.Value;
                 }
             }
-
-            // then, kalau ga match sama sekali dengan rules, print number
+            
             if (output == "")
                 output = i.ToString();
 
@@ -121,7 +119,7 @@ class Program
             }
             else if (choice == "4")
             {
-                Console.Write("Masukkan n: ");
+                Console.Write("Enter n: ");
                 if (!int.TryParse(Console.ReadLine(), out int n))
                 {
                     Console.WriteLine("Input must be number");
@@ -136,7 +134,7 @@ class Program
             }
             else
             {
-                Console.WriteLine("Pilihan tidak valid, coba lagi.");
+                Console.WriteLine("Your choice is not valid. Pick 1-5. Try again!");
             }
         }   
     }
